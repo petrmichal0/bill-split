@@ -120,12 +120,9 @@ Eat-Split/
 ## Technologies Used
 
 [![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#)
-[![JavaScript Badge](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F7DF1E)](#)
-[![CSS Badge](https://img.shields.io/badge/-CSS-1572B6?style=for-the-badge&labelColor=black&logo=css3&logoColor=1572B6)](#)
 
 ## Third-Party Libraries
 
-- **React Router**: For navigating between different views in the app.
 - **ESLint**: For identifying and fixing problems in JavaScript code.
 - **Prettier**: For ensuring consistent code formatting.
 
