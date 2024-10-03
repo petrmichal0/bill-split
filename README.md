@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# Eat-Split
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Title and Description
+Eat-Split is a web application designed to help users split bills and manage balances with friends. Users can add friends, track balances, and split bills with ease.
 
-## Available Scripts
+## Badges
+![Static Badge](https://img.shields.io/badge/status-online-brightgreen)
 
-In the project directory, you can run:
+## Quick Look
+<img src="https://github.com/user-attachments/assets/your-image-id" width="700" alt="Eat-Split App Demo">
 
-### `npm start`
+## Table of Content
+- [Project Title and Description](#project-title-and-description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Demo (link)](#demo-link)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Third-Party Libraries](#third-party-libraries)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- Add friends with name and image
+- Split bills between friends
+- Track and manage balances between friends
+- Simple and intuitive user interface
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+### Prerequisites
+- Node.js (v12 or higher)
+- npm (v6 or higher)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps
 
-### `npm run build`
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/petrmichal0/eat-split.git
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
+    ```bash
+    cd eat-split
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
+To start the application, run the following command:
+```bash
+npm start
+```
 
-### `npm run eject`
+After starting, go to [http://localhost:3000](http://localhost:3000) in your web browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<table> 
+  <tr> 
+    <th>Homepage</th> 
+    <th>Add Friend</th> 
+    <th>Split Bill</th> 
+  </tr> 
+  <tr> 
+    <td style="border: 1px solid black; width: 310px; height: 310px; text-align: center;"> 
+      <a href="https://github.com/user-attachments/assets/f578f2cc-9fbe-4540-817a-e55acf40fd2e" target="_blank" rel="noopener noreferrer"> 
+        <img src="https://github.com/user-attachments/assets/f578f2cc-9fbe-4540-817a-e55acf40fd2e" width="300" height="300" alt="Homepage"> 
+      </a> 
+    </td> 
+    <td style="border: 1px solid black; width: 310px; height: 310px; text-align: center;"> 
+      <a href="https://github.com/user-attachments/assets/df1d2a72-35b5-4fa5-948d-f6786f2a1383" target="_blank" rel="noopener noreferrer"> 
+        <img src="https://github.com/user-attachments/assets/df1d2a72-35b5-4fa5-948d-f6786f2a1383" width="300" height="300" alt="Add Friend"> 
+      </a> 
+    </td> 
+    <td style="border: 1px solid black; width: 310px; height: 310px; text-align: center;"> 
+      <a href="https://github.com/user-attachments/assets/3f954c04-50a9-4a2f-a3a8-6341b28b12eb" target="_blank" rel="noopener noreferrer"> 
+        <img src="https://github.com/user-attachments/assets/3f954c04-50a9-4a2f-a3a8-6341b28b12eb" width="300" height="300" alt="Split Bill"> 
+      </a> 
+    </td> 
+  </tr> 
+</table>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Demo (link)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Check out the live demo of the application [here](#).
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+Eat-Split/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   ├── robots.txt
+├── src/
+│   ├── components/
+│   │   ├── Button.js
+│   │   ├── FormAddFriend.js
+│   │   ├── FormSplitBill.js
+│   │   ├── Friend.js
+│   │   ├── FriendList.js
+│   ├── App.js
+│   ├── data.js
+│   ├── index.css
+│   ├── index.js
+├── .gitignore
+├── README.md
+├── package-lock.json
+├── package.json
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
+[![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#)
+[![JavaScript Badge](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F7DF1E)](#)
+[![CSS Badge](https://img.shields.io/badge/-CSS-1572B6?style=for-the-badge&labelColor=black&logo=css3&logoColor=1572B6)](#)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Third-Party Libraries
 
-### Analyzing the Bundle Size
+- **React Router**: For navigating between different views in the app.
+- **ESLint**: For identifying and fixing problems in JavaScript code.
+- **Prettier**: For ensuring consistent code formatting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
