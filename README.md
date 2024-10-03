@@ -7,7 +7,7 @@ Eat-Split is a web application designed to help users split bills and manage bal
 ![Static Badge](https://img.shields.io/badge/status-online-brightgreen)
 
 ## Quick Look
-<img src="https://github.com/user-attachments/assets/your-image-id" width="700" alt="Eat-Split App Demo">
+<img src="https://github.com/user-attachments/assets/97dd0439-7fb1-4d5b-82f5-b3dff8691150" width="700" alt="Eat-Split App Demo">
 
 ## Table of Content
 - [Project Title and Description](#project-title-and-description)
@@ -68,18 +68,18 @@ After starting, go to [http://localhost:3000](http://localhost:3000) in your web
   </tr> 
   <tr> 
     <td style="border: 1px solid black; width: 310px; height: 310px; text-align: center;"> 
-      <a href="https://github.com/user-attachments/assets/f578f2cc-9fbe-4540-817a-e55acf40fd2e" target="_blank" rel="noopener noreferrer"> 
-        <img src="https://github.com/user-attachments/assets/f578f2cc-9fbe-4540-817a-e55acf40fd2e" width="300" height="300" alt="Homepage"> 
+      <a href="https://github.com/user-attachments/assets/84213283-7e7a-422c-8754-d464998fdc1d" target="_blank" rel="noopener noreferrer"> 
+        <img src="https://github.com/user-attachments/assets/84213283-7e7a-422c-8754-d464998fdc1d" width="300" height="300" alt="Homepage"> 
       </a> 
     </td> 
     <td style="border: 1px solid black; width: 310px; height: 310px; text-align: center;"> 
-      <a href="https://github.com/user-attachments/assets/df1d2a72-35b5-4fa5-948d-f6786f2a1383" target="_blank" rel="noopener noreferrer"> 
-        <img src="https://github.com/user-attachments/assets/df1d2a72-35b5-4fa5-948d-f6786f2a1383" width="300" height="300" alt="Add Friend"> 
+      <a href="https://github.com/user-attachments/assets/87695a11-2d28-4de2-8453-9fa211d4809a" target="_blank" rel="noopener noreferrer"> 
+        <img src="https://github.com/user-attachments/assets/87695a11-2d28-4de2-8453-9fa211d4809a" width="300" height="300" alt="Add Friend"> 
       </a> 
     </td> 
     <td style="border: 1px solid black; width: 310px; height: 310px; text-align: center;"> 
-      <a href="https://github.com/user-attachments/assets/3f954c04-50a9-4a2f-a3a8-6341b28b12eb" target="_blank" rel="noopener noreferrer"> 
-        <img src="https://github.com/user-attachments/assets/3f954c04-50a9-4a2f-a3a8-6341b28b12eb" width="300" height="300" alt="Split Bill"> 
+      <a href="https://github.com/user-attachments/assets/c694c4bf-6f08-46f7-9308-591b0465798d" target="_blank" rel="noopener noreferrer"> 
+        <img src="https://github.com/user-attachments/assets/c694c4bf-6f08-46f7-9308-591b0465798d" width="300" height="300" alt="Split Bill"> 
       </a> 
     </td> 
   </tr> 
@@ -87,7 +87,7 @@ After starting, go to [http://localhost:3000](http://localhost:3000) in your web
 
 ## Demo (link)
 
-Check out the live demo of the application [here](#).
+Check out the live demo of the application [here](https://billsplitfriends.netlify.app/).
 
 ## Project Structure
 
