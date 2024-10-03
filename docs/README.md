@@ -5,7 +5,7 @@ Eat-Split is a web application designed to help users split bills and manage bal
 ![Static Badge](https://img.shields.io/badge/status-online-brightgreen)
 
 ## Quick Look
-<img src="https://github.com/user-attachments/assets/2337423c-56e5-42fc-ac80-511d7d41fadd" width="700" alt="Eat-Split App Demo">
+<img src="https://github.com/user-attachments/assets/2337423c-56e5-42fc-ac80-511d7d41fadd" width="700" alt="Eat-Split App Demo"  style="border: 1px solid black;">
 
 ## Table of Content
 - [Project Title and Description](#project-title-and-description)
