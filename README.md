@@ -1,4 +1,4 @@
-# Eat-Split
+# Bill-Split
 
 ## Project Title and Description
 Eat-Split is a web application designed to help users split bills and manage balances with friends. Users can add friends, track balances, and split bills with ease.
