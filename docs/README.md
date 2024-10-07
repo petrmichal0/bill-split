@@ -1,5 +1,5 @@
 ## Project Title and Description
-Eat-Split is a web application designed to help users split bills and manage balances with friends. Users can add friends, track balances, and split bills with ease.
+Bill-Split is a web application designed to help users split bills and manage balances with friends. Users can add friends, track balances, and split bills with ease.
 
 ## Badges
 ![Static Badge](https://img.shields.io/badge/status-online-brightgreen)
@@ -89,7 +89,7 @@ Check out the live demo of the application [here](https://billsplitfriends.netli
 
 ## Project Structure
 
-```bash
+```css
 Eat-Split/
 ├── public/
 │   ├── favicon.ico
