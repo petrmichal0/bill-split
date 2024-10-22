@@ -37,12 +37,12 @@ Bill-Split is a web application designed to help users split bills and manage ba
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/petrmichal0/eat-split.git
+    git clone https://github.com/petrmichal0/bill-split.git
     ```
 
 2. Navigate to the project directory:
     ```bash
-    cd eat-split
+    cd bill-split
     ```
 
 3. Install dependencies:
@@ -64,7 +64,7 @@ After starting, go to [http://localhost:3000](http://localhost:3000) in your web
   <tr> 
     <th>Homepage</th> 
     <th>Add Friend</th> 
-    <th>Split Bill</th> 
+    <th>Bill Split</th> 
   </tr> 
   <tr> 
     <td style="border: 1px solid black; width: 310px; height: 310px; text-align: center;"> 
@@ -123,8 +123,7 @@ Eat-Split/
 
 ## Third-Party Libraries
 
-- **ESLint**: For identifying and fixing problems in JavaScript code.
-- **Prettier**: For ensuring consistent code formatting.
+- None
 
 ## License
 
