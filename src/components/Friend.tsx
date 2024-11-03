@@ -1,9 +1,21 @@
 import Button from "./Button";
 
-function Friend({ friend, onSelection, selectedFriend }) {
-  const { image, name, balance, id } = friend;
+type FriendType = {
+  id: string;
+  name: string;
+  image: string;
+  balance: number;
+};
 
-  const isSelected = selectedFriend.id === id;
+type FriendProps = {
+  friend: FriendType;
+  onSelection: (friend: FriendType) => void;
+  selectedFriend: FriendType | null;
+};
+
+function Friend({ friend, onSelection, selectedFriend }: FriendProps) {
+  const { image, name, balance, id } = friend;
+  const isSelected = selectedFriend?.id === id;
 
   return (
     <li className={isSelected ? "selected" : ""}>

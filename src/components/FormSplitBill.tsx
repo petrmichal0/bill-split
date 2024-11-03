@@ -1,20 +1,31 @@
-import { useState } from "react";
-
+import { useState, FormEvent } from "react";
 import Button from "./Button";
 
-function FormSplitBill({ selectedFriend, onSplitBill }) {
-  const [bill, setBill] = useState("");
-  const [paidByUser, setPaidByUser] = useState("");
+type Friend = {
+  id: string;
+  name: string;
+  image: string;
+  balance: number;
+};
+
+type FormSplitBillProps = {
+  selectedFriend: Friend;
+  onSplitBill: (value: number) => void;
+};
+
+function FormSplitBill({ selectedFriend, onSplitBill }: FormSplitBillProps) {
+  const [bill, setBill] = useState<number | "">("");
+  const [paidByUser, setPaidByUser] = useState<number | "">("");
   const [whoIsPaying, setWhoIsPaying] = useState("user");
 
-  const paidByFriend = bill ? bill - paidByUser : "";
+  const paidByFriend = bill ? bill - Number(paidByUser) : 0;
 
-  function handleSubmit(e) {
+  function handleSubmit(e: FormEvent) {
     e.preventDefault();
 
     if (!bill || !paidByUser) return;
 
-    onSplitBill(whoIsPaying === "user" ? paidByFriend : -paidByUser);
+    onSplitBill(whoIsPaying === "user" ? paidByFriend : -Number(paidByUser));
   }
 
   return (
@@ -23,24 +34,26 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
 
       <label>💰 Bill value</label>
       <input
-        type="text"
+        type="number"
         value={bill}
         onChange={(e) => setBill(Number(e.target.value))}
       />
 
       <label>🕴 Your expense</label>
       <input
-        type="text"
+        type="number"
         value={paidByUser}
         onChange={(e) =>
           setPaidByUser(
-            Number(e.target.value) > bill ? paidByUser : Number(e.target.value)
+            Number(e.target.value) > Number(bill)
+              ? paidByUser
+              : Number(e.target.value)
           )
         }
       />
 
       <label>👭 {selectedFriend.name} expense</label>
-      <input type="text" disabled value={paidByFriend} />
+      <input type="number" disabled value={paidByFriend} />
 
       <label>🤑 Who is paying the bill?</label>
       <select
