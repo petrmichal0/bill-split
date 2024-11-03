@@ -1,40 +1,46 @@
 import { useState } from "react";
-
 import data from "./data";
 import Button from "./components/Button";
 import FormAddFriend from "./components/FormAddFriend";
 import FormSplitBill from "./components/FormSplitBill";
 import FriendList from "./components/FriendList";
 
+type Friend = {
+  id: string;
+  name: string;
+  image: string;
+  balance: number;
+};
+
 function App() {
   const [showAddFriend, setShowAddFriend] = useState(false);
-  const [friends, setFriends] = useState(data);
-  const [selectedFriend, setSelectedFriend] = useState("");
+  const [friends, setFriends] = useState<Friend[]>(data);
+  const [selectedFriend, setSelectedFriend] = useState<Friend | null>(null);
 
   function handleShowAddFriend() {
-    setShowAddFriend((showAddFriend) => !showAddFriend);
+    setShowAddFriend((prevShowAddFriend) => !prevShowAddFriend);
   }
 
-  function handleAddFriend(friend) {
-    setFriends((friends) => [...friends, friend]);
+  function handleAddFriend(friend: Friend) {
+    setFriends((prevFriends) => [...prevFriends, friend]);
     setShowAddFriend(false);
   }
 
-  function handleSelection(friend) {
-    setSelectedFriend((cur) => (cur.id === friend.id ? "" : friend));
+  function handleSelection(friend: Friend) {
+    setSelectedFriend((cur) => (cur?.id === friend.id ? null : friend));
     setShowAddFriend(false);
   }
 
-  function handleSplitBill(value) {
-    setFriends((friends) =>
-      friends.map((friend) =>
-        friend.id === selectedFriend.id
+  function handleSplitBill(value: number) {
+    setFriends((prevFriends) =>
+      prevFriends.map((friend) =>
+        friend.id === selectedFriend?.id
           ? { ...friend, balance: friend.balance + value }
           : friend
       )
     );
 
-    setSelectedFriend("");
+    setSelectedFriend(null);
   }
 
   return (
