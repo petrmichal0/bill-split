@@ -1,4 +1,4 @@
-import Button from "../components/Button";
+import Button from "./Button";
 
 function Friend({ friend, onSelection, selectedFriend }) {
   const { image, name, balance, id } = friend;
