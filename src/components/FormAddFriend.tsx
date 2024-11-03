@@ -22,7 +22,7 @@ function FormAddFriend({ onAddFriend }: FormAddFriendProps) {
     if (!name || !image) return;
 
     const newFriend: Friend = {
-      id: crypto.randomUUID(),
+      id: `${Date.now()}-${Math.floor(Math.random() * 1000)}`,
       name,
       image,
       balance: 0,
@@ -36,15 +36,17 @@ function FormAddFriend({ onAddFriend }: FormAddFriendProps) {
 
   return (
     <form className="form-add-friend" onSubmit={handleSubmit}>
-      <label>👩🏼‍🤝‍🧑🏼 Friend name</label>
+      <label htmlFor="friend-name">👩🏼‍🤝‍🧑🏼 Friend name</label>
       <input
+        id="friend-name"
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
 
-      <label>🖼 Image URL</label>
+      <label htmlFor="image-url">🖼 Image URL</label>
       <input
+        id="image-url"
         type="text"
         value={image}
         onChange={(e) => setImage(e.target.value)}
