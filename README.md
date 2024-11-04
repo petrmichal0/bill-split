@@ -7,7 +7,7 @@ Bill-Split is a web application designed to help users split bills and manage ba
 ![Static Badge](https://img.shields.io/badge/status-online-brightgreen)
 
 ## Quick Look
-<img src="https://github.com/user-attachments/assets/2337423c-56e5-42fc-ac80-511d7d41fadd" width="700" alt="Eat-Split App Demo">
+<img src="https://github.com/user-attachments/assets/47407524-c3c9-4148-82e9-7237ac184bbb" width="700" alt="Eat-Split App Demo">
 
 ## Table of Content
 - [Project Title and Description](#project-title-and-description)
@@ -30,8 +30,8 @@ Bill-Split is a web application designed to help users split bills and manage ba
 ## Installation
 
 ### Prerequisites
-- Node.js (v12 or higher)
-- npm (v6 or higher)
+- Node.js (v20 or higher)
+- npm (v10 or higher)
 
 ### Steps
 
@@ -93,33 +93,57 @@ Check out the live demo of the application [here](https://billsplitfriends.netli
 
 ```css
 Eat-Split/
+├── .github/
+│   └── workflows/
+│       └── main.yml
+├── docs/
+│   └── README.md
 ├── public/
 │   ├── favicon.ico
-│   ├── index.html
 │   ├── logo192.png
 │   ├── logo512.png
 │   ├── manifest.json
-│   ├── robots.txt
+│   └── robots.txt
 ├── src/
 │   ├── components/
-│   │   ├── Button.js
-│   │   ├── FormAddFriend.js
-│   │   ├── FormSplitBill.js
-│   │   ├── Friend.js
-│   │   ├── FriendList.js
-│   ├── App.js
-│   ├── data.js
+│   │   ├── Button.tsx
+│   │   ├── FormAddFriend.tsx
+│   │   ├── FormSplitBill.tsx
+│   │   ├── Friend.tsx
+│   │   └── FriendList.tsx
+│   ├── App.tsx
+│   ├── data.ts
 │   ├── index.css
-│   ├── index.js
+│   ├── index.html
+│   └── main.tsx
+├── tests/
+│   ├── integration/
+│   │   └── App.integration.test.tsx
+│   └── unit/
+│       ├── components/
+│       │   ├── Button.test.tsx
+│       │   ├── FormAddFriend.test.tsx
+│       │   ├── FormSplitBill.test.tsx
+│       │   ├── Friend.test.tsx
+│       │   └── FriendList.test.tsx
+│       └── App.test.tsx
 ├── .gitignore
 ├── README.md
+├── jest.config.js
 ├── package-lock.json
 ├── package.json
+├── tsconfig.json
+└── vite.config.js
 ```
 
 ## Technologies Used
 
 [![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#)
+[![Vite Badge](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&labelColor=black&logo=vite&logoColor=646CFF)](#)
+[![TypeScript Badge](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&labelColor=black&logo=typescript&logoColor=3178C6)](#)
+[![Framer Motion Badge](https://img.shields.io/badge/-FramerMotion-BC4A97?style=for-the-badge&labelColor=black&logo=framer&logoColor=BC4A97)](#)
+[![Jest Badge](https://img.shields.io/badge/-Jest-C21325?style=for-the-badge&labelColor=black&logo=jest&logoColor=C21325)](#)
+[![React Testing Library Badge](https://img.shields.io/badge/-React%20Testing%20Library-E33332?style=for-the-badge&labelColor=black&logo=testing-library&logoColor=E33332)](#)
 
 ## Third-Party Libraries
 
