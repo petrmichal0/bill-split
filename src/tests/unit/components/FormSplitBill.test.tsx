@@ -1,6 +1,6 @@
-// FormSplitBill.test.tsx
 import { render, screen } from "@testing-library/react";
 import user from "@testing-library/user-event";
+import "@testing-library/jest-dom";
 import FormSplitBill from "../../../components/FormSplitBill";
 
 const mockSplitBill = jest.fn();
@@ -45,6 +45,6 @@ describe("FormSplitBill", () => {
     await user.type(userExpenseInput, "60");
     await user.click(splitButton);
 
-    expect(mockSplitBill).toHaveBeenCalledWith(40); // Friend's portion
+    expect(mockSplitBill).toHaveBeenCalledWith(40);
   });
 });

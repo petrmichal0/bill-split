@@ -14,9 +14,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "jest",
-    "test:unit": "jest --testPathPattern='.*\\.unit\\.test\\.tsx$'",
-    "test:integration": "jest --testPathPattern='.*\\.integration\\.test\\.tsx$'",
+    "test": "jest --verbose",
+    "test:unit": "jest --testPathPattern='.*\\.unit\\.test\\.tsx$' --verbose",
+    "test:integration": "jest --testPathPattern='.*\\.integration\\.test\\.tsx$' --verbose",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
