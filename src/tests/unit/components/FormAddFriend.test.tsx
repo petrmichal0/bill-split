@@ -26,6 +26,7 @@ describe("FormAddFriend", () => {
     const addButton = screen.getByRole("button", { name: "Add" });
 
     await user.type(nameInput, "John Doe");
+    await user.clear(imageInput);
     await user.type(imageInput, "https://i.pravatar.cc/48?u=12345");
     await user.click(addButton);
 
