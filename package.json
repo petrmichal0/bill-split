@@ -1,5 +1,5 @@
 {
-  "name": "traveling",
+  "name": "bill-split",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,8 +15,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "jest --verbose",
-    "test:unit": "jest --testPathPattern='.*\\.unit\\.test\\.tsx$' --verbose",
-    "test:integration": "jest --testPathPattern='.*\\.integration\\.test\\.tsx$' --verbose",
+    "test:unit": "jest --testPathPattern=tests/unit --verbose",
+    "test:integration": "jest --testPathPattern=tests/integration --verbose",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
