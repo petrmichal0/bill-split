@@ -30,10 +30,9 @@ describe("FriendList component", () => {
       />
     );
 
-    const friendNames = friends.map((friend) => friend.name);
-    friendNames.forEach((name) => {
-      const friendElement = screen.getByText(name);
-      expect(friendElement).toBeInTheDocument();
+  friends.forEach((friend) => {
+  const friendElement = screen.getByText(friend.name);
+  expect(friendElement).toBeInTheDocument();
     });
   });
 
