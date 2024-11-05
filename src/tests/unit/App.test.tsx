@@ -21,4 +21,14 @@ describe("App", () => {
     await user.click(addButton);
     expect(nameInput).not.toBeInTheDocument();
   });
+
+  test("displays split bill form when a friend is selected", async () => {
+  render(<App />);
+
+  const selectButton = screen.getAllByRole("button", { name: /select/i })[0];
+  await user.click(selectButton);
+
+  const splitBillHeader = screen.getByText(/split a bill with/i);
+  expect(splitBillHeader).toBeInTheDocument();
+});
 });
