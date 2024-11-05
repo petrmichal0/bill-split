@@ -29,6 +29,8 @@ describe("App Integration Test", () => {
     const nameInput = screen.getByLabelText(/friend name/i);
     const imageInput = screen.getByLabelText(/image url/i);
     await user.type(nameInput, "John Doe");
+
+    await user.clear(imageInput);
     await user.type(imageInput, "https://i.pravatar.cc/48?u=99999");
 
     const submitButton = screen.getByRole("button", { name: /add/i });
